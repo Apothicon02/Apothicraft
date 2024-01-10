@@ -1,13 +1,12 @@
 {
   "compatibilityLevel": "JAVA_17",
-  "package": "com.Apothic0n.Locator.mixin",
-  "refmap": "mixins.locator.refmap.json",
+  "package": "com.Apothic0n.Apothicraft.mixin",
+  "refmap": "mixins.apothicraft.refmap.json",
   "required": true,
   "injectors": {
     "defaultRequire": 1
   },
   "mixins": [
-    "LocateBiomeMixin"
   ],
   "client": [
   ],
