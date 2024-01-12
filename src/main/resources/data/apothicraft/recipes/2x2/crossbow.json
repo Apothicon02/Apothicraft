@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Y#",
+    "#X"
+  ],
+  "key": {
+    "Y": {
+      "item": "minecraft:flint"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:crossbow"
+  }
+}
