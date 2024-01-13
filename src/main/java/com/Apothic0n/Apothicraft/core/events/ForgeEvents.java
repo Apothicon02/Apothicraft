@@ -35,7 +35,7 @@ import static com.Apothic0n.Apothicraft.core.ApothicraftMath.getOffsetDouble;
 @Mod.EventBusSubscriber(modid = Apothicraft.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ForgeEvents {
     static List<String> whitelist = List.of(
-            "gameplay/fishing/fish", "gameplay/fishing/junk", "gameplay/fishing/treasure",
+            "gameplay/fishing", "gameplay/fishing/fish", "gameplay/fishing/junk", "gameplay/fishing/treasure",
 
             "entities/allay", "entities/armor_stand", "entities/axolotl", "entities/bat", "entities/bee", "entities/blaze", "entities/camel", "entities/cat", "entities/cave_spider", "entities/chicken", "entities/cod", "entities/cow",
             "entities/creeper", "entities/dolphin", "entities/donkey", "entities/drowned", "entities/elder_guardian", "entities/ender_dragon", "entities/enderman", "entities/endermite", "entities/evoker", "entities/fox", "entities/frog",
@@ -51,7 +51,14 @@ public class ForgeEvents {
 
             "blocks/campfire", "blocks/torch",
             "blocks/dirt", "blocks/coarse_dirt", "blocks/dirt_path", "blocks/grass_block", "blocks/podzol", "blocks/rooted_dirt",
-            "blocks/packed_mud", "blocks/mud_bricks", "blocks/mud_brick_wall", "blocks/mud_brick_stairs", "blocks/mud_brick_slab"
+            "blocks/packed_mud", "blocks/mud_bricks", "blocks/mud_brick_wall", "blocks/mud_brick_stairs", "blocks/mud_brick_slab",
+            "blocks/oak_leaves", "blocks/dark_oak_leaves", "blocks/birch_leaves", "blocks/spruce_leaves", "blocks/jungle_leaves", "blocks/acacia_leaves", "blocks/azalea_leaves", "blocks/flowering_azalea_leaves", "blocks/mangrove_leaves",
+            "blocks/cherry_leaves",
+            "blocks/grass", "blocks/tall_grass", "blocks/dandelion", "blocks/poppy", "blocks/blue_orchid", "blocks/allium", "blocks/azure_bluet", "blocks/red_tulip", "blocks/orange_tulip", "blocks/white_tulip", "blocks/pink_tulip",
+            "blocks/oxeye_daisy", "blocks/cornflower", "blocks/lily_of_the_valley", "blocks/wither_rose", "blocks/torchflower", "blocks/sunflower", "blocks/lilac", "blocks/rose_bush", "blocks/peony", "blocks/pitcher_plant",
+            "blocks/pitcher_crop", "blocks/torchflower_crop", "blocks/wheat", "blocks/carrots", "blocks/potatoes", "blocks/beetroots", "blocks/melon", "blocks/melon_stem", "blocks/pumpkin", "blocks/carved_pumpkin", "blocks/pumpkin_stem",
+            "blocks/jack_o_lantern", "blocks/bamboo", "blocks/bamboo_sapling", "blocks/sugar_cane", "blocks/cocoa", "blocks/sweet_berry_bush", "blocks/cactus", "blocks/red_mushroom", "blocks/brown_mushroom", "blocks/kelp", "blocks/sea_pickle",
+            "blocks/nether_wart", "blocks/chorus_flower", "blocks/chorus_plant", "blocks/cave_vines", "blocks/cave_vines_plant", "blocks/warped_fungus", "blocks/crimson_fungus"
     );
     @SubscribeEvent
     static void lootTableLoadEvent(LootTableLoadEvent event) {

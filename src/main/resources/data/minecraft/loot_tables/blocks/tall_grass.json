@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wheat_seeds",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.66
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "tag": "minecraft:hoe"
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/tall_grass"
+}

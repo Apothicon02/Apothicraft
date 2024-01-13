@@ -5,11 +5,17 @@
       "item": "minecraft:dirt"
     },
     {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
       "item": "minecraft:wheat"
     }
   ],
   "result": {
     "item": "minecraft:packed_mud",
-    "count": 2
+    "count": 6
   }
 }
