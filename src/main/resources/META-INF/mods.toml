@@ -38,3 +38,9 @@ Apothicraft:
 
 Recreating Minecraft!
 '''
+[[dependencies.apothicraft]]
+modId="biox"
+mandatory=false
+versionRange="[1.4.0,)"
+ordering="AFTER"
+side="BOTH"
