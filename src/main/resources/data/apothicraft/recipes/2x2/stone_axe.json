@@ -1,12 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XX",
-    "X#"
+    "XS",
+    "L#"
   ],
   "key": {
     "#": {
       "item": "minecraft:stick"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "S": {
+      "item": "minecraft:string"
     },
     "X": {
       "item": "minecraft:flint"

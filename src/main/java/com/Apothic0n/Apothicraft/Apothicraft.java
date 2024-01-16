@@ -1,12 +1,40 @@
 package com.Apothic0n.Apothicraft;
 
+import com.Apothic0n.Apothicraft.core.events.ForgeEvents;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.ArrayList;
+import java.util.Set;
+
 @Mod(Apothicraft.MODID)
 public class Apothicraft {
     public static final String MODID = "apothicraft";
+    public static ArrayList<String> woodBlocks = generateSet();
+
+    private static ArrayList<String> generateSet() {
+        ArrayList<String> tempList = new ArrayList<>();
+        for (String string : Set.of("oak", "dark_oak", "spruce", "birch", "acacia", "jungle", "mangrove", "cherry")) {
+            tempList.add("minecraft:blocks/stripped_"+string+"_log");
+            tempList.add("minecraft:blocks/"+string+"_log");
+            tempList.add("minecraft:blocks/"+string+"_wood");
+            tempList.add("minecraft:blocks/"+string+"_planks");
+            tempList.add("minecraft:blocks/"+string+"_slab");
+            tempList.add("minecraft:blocks/"+string+"_stairs");
+            tempList.add("minecraft:blocks/"+string+"_boat");
+            tempList.add("minecraft:blocks/"+string+"_sign");
+            tempList.add("minecraft:blocks/"+string+"_hanging_sign");
+            tempList.add("minecraft:blocks/"+string+"_fence");
+            tempList.add("minecraft:blocks/"+string+"_fence_gate");
+            tempList.add("minecraft:blocks/"+string+"_door");
+            tempList.add("minecraft:blocks/"+string+"_trapdoor");
+            tempList.add("minecraft:blocks/"+string+"_button");
+            tempList.add("minecraft:blocks/"+string+"_pressure_plate");
+            tempList.add("minecraft:blocks/"+string+"_sapling");
+        }
+        return tempList;
+    }
 
     public Apothicraft() {
         for (int i = 0; i < VillagerTrades.TRADES.get(VillagerProfession.FARMER).size(); i++) {

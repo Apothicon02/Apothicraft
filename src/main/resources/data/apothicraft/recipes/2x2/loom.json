@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "@@",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:mud_bricks"
+    },
+    "@": {
+      "item": "minecraft:cobweb"
+    }
+  },
+  "result": {
+    "item": "minecraft:loom"
+  }
+}

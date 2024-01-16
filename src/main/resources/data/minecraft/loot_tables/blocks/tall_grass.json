@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 2,
       "bonus_rolls": 0,
       "entries": [
         {
@@ -11,20 +11,18 @@
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.66
+              "chance": 0.5
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:hoes"
+              }
             }
           ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "tag": "minecraft:hoe"
-          }
         }
       ]
     }
   ],
-  "random_sequence": "minecraft:blocks/tall_grass"
+  "random_sequence": "minecraft:blocks/grass"
 }
